@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_15"
+        android:text="1"/>
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_3"
+            android:text="墨迹天气"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_3"
+            android:text="1.9万人下载"
+            android:textColor="@color/color_palette_orange_1"
+            android:textSize="@dimen/text_size_13" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_25"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_3"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:background="@drawable/down_load_bg"
+            android:text="@string/down_load"
+            android:textColor="@color/color_palette_blue_1"
+            android:textSize="@dimen/dimen_15" />
+    </LinearLayout>
+</LinearLayout>

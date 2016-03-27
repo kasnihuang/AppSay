@@ -2,17 +2,101 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#009eff"
-    android:orientation="vertical" >
-    
-<TextView 
+    android:background="@color/color_palette_red_1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/top_rank_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            layout="@layout/top_rank_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_15"
+                android:text="1" />
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="墨迹天气"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_3"
+                    android:text="1.9万人下载"
+                    android:textColor="@color/color_palette_orange_1"
+                    android:textSize="@dimen/text_size_13" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_8" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_25"
+                    android:paddingLeft="@dimen/dimen_10"
+                    android:paddingRight="@dimen/dimen_10"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:layout_marginTop="@dimen/dimen_3"
+                    android:background="@drawable/down_load_bg"
+                    android:text="@string/down_load"
+                    android:textColor="@color/color_palette_blue_1"
+                    android:textSize="@dimen/dimen_15" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/top_rank_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/list_rank"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/two"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textSize="50sp"
-        android:textColor="#fff"
+        android:background="@color/color_palette_gray_1"
+        android:verticalSpacing="@dimen/dimen_10"
+        android:numColumns="1"
         />
-    
+
 </LinearLayout>

@@ -12,4 +12,7 @@
     <string name="size">大小:%1s</string>
     <string name="rate_up">用户好评率</string>
     <string name="rate_down">用户差评率</string>
+
+    <string name="down_load">下载</string>
+    <string name="more">MORE</string>
 </resources>

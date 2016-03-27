@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginRight="@dimen/dimen_15"
         android:orientation="horizontal"
         android:visibility="gone">
         <Button
@@ -73,7 +73,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/dimen_10"
         android:layout_toRightOf="@id/info_layout"
         android:orientation="vertical">
         <TextView
@@ -99,15 +99,15 @@
         android:layout_centerVertical="true"
         android:text="分享"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="@dimen/margin_10"/>
+        android:layout_marginRight="@dimen/dimen_10"/>
 
     <View
         android:layout_width="1dp"
         android:layout_height="match_parent"
         android:layout_toLeftOf="@id/btn_share"
-        android:layout_marginTop="@dimen/margin_10"
-        android:layout_marginBottom="@dimen/margin_10"
-        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
         android:background="@color/colorPrimary"/>
 
 </RelativeLayout>

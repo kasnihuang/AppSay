@@ -5,4 +5,14 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="accent">#40C4FF</color>
+    
+    <color name="color_palette_red_1">#AD2A0A</color>
+
+    <color name="color_palette_orange_1">#F1AE4C</color>
+
+    <color name="color_palette_blue_1">#4BBCF0</color>
+
+    <color name="color_palette_green_1">#5FA631</color>
+
+    <color name="color_palette_gray_1">#EDEDED</color>
 </resources>
