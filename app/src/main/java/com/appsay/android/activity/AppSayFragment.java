@@ -39,7 +39,7 @@ public class AppSayFragment extends ListFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 //		System.out.println("OneFragment  onCreateView");
-        return inflater.inflate(R.layout.one, container, false);
+        return inflater.inflate(R.layout.app_say_layout, container, false);
     }
 
     @Override
@@ -128,7 +128,7 @@ public class AppSayFragment extends ListFragment {
         protected Void doInBackground(Void... params) {
             applist = checkForLaunchIntent(packageManager.getInstalledApplications(PackageManager.GET_META_DATA));
             listadaptor = new ApplicationAdapter(getActivity(),
-                    R.layout.snippet_list_row, applist);
+                    R.layout.app_say_item, applist);
 
             return null;
         }

@@ -54,7 +54,7 @@ public class ApplicationAdapter extends ArrayAdapter<AppInfo> {
         if (null == convertView) {
             viewHolder = new ViewHolder();
             layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = layoutInflater.inflate(R.layout.snippet_list_row, null);
+            convertView = layoutInflater.inflate(R.layout.app_say_item, null);
             viewHolder.iconView = (ImageView) convertView.findViewById(R.id.app_icon);
             viewHolder.appName = (TextView) convertView.findViewById(R.id.app_name);
             viewHolder.appVersion = (TextView) convertView.findViewById(R.id.app_version);

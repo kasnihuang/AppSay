@@ -22,7 +22,7 @@ public class AppRankFragment extends Fragment {
 			Bundle savedInstanceState)
 	{
 //		System.out.println("TwoFragment onCreateView");
-		return inflater.inflate(R.layout.two, container, false);
+		return inflater.inflate(R.layout.app_rank_layout, container, false);
 	}
 	
 	
