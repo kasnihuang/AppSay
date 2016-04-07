@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight">
+
+    <TextView
+        android:id="@+id/tv_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_18"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:text="1"/>
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_rank"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:padding="3dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"/>
+
+    <RelativeLayout
+        android:id="@+id/info_layout"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/app_icon"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="5dp" >
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="应用说"/>
+
+        <TextView
+            android:id="@+id/app_scope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_below="@id/app_name"
+            android:maxLength="10"
+            android:text="4.7分"/>
+
+        <TextView
+            android:id="@+id/tv_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_below="@id/app_name"
+            android:layout_toRightOf="@id/app_scope"
+            android:text="18.8M"/>
+
+        <ImageView
+            android:id="@+id/app_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_below="@id/tv_size"
+            android:src="@mipmap/ic_search_bar_search_btn"/>
+
+        <TextView
+            android:id="@+id/tv_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_below="@id/tv_size"
+            android:layout_toRightOf="@id/app_status"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@android:color/holo_orange_dark"
+            android:text="68.0%"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_down"
+        android:layout_height="@dimen/dimen_25"
+        android:layout_width="wrap_content"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_3"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:background="@drawable/down_load_bg"
+        android:text="@string/down_load"
+        android:textColor="@color/color_palette_blue_1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:textSize="@dimen/text_size_15"/>
+
+</RelativeLayout>

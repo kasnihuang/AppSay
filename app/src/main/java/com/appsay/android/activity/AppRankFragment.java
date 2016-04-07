@@ -1,6 +1,7 @@
 package com.appsay.android.activity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -11,12 +12,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.appsay.android.R;
 import com.appsay.android.bean.RankInfo;
+import com.appsay.android.utils.Constants;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -103,16 +106,25 @@ public class AppRankFragment extends Fragment {
                 viewHolder.ivAppOne = (ImageView) convertView.findViewById(R.id.iv_app_one);
                 viewHolder.ivAppTwo = (ImageView) convertView.findViewById(R.id.iv_app_two);
                 viewHolder.ivAppThree = (ImageView) convertView.findViewById(R.id.iv_app_three);
+                viewHolder.mBtnMore = (Button) convertView.findViewById(R.id.btn_more);
                 convertView.setTag(viewHolder);
             } else {
                 viewHolder = (ViewHolder) convertView.getTag();
             }
-            RankInfo info = dataList.get(position);
+            final RankInfo info = dataList.get(position);
             if (info != null) {
                 viewHolder.tvLabel.setText(info.getLabel());
                 viewHolder.ivAppOne.setImageBitmap(info.getIconOne());
                 viewHolder.ivAppTwo.setImageBitmap(info.getIconTwo());
                 viewHolder.ivAppThree.setImageBitmap(info.getIconThree());
+                viewHolder.mBtnMore.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(getActivity(), AppRankListActivity.class);
+                        intent.putExtra(Constants.RANK_LIST_LABEL, info.getLabel());
+                        startActivity(intent);
+                    }
+                });
             }
             return convertView;
         }
@@ -123,6 +135,7 @@ public class AppRankFragment extends Fragment {
             public ImageView ivAppOne;
             public ImageView ivAppTwo;
             public ImageView ivAppThree;
+            public Button mBtnMore;
         }
     }
 }
